@@ -1,13 +1,12 @@
 #include <string>
-#include <vector>
 
 using namespace std;
 
 string solution(string my_string) {
     string answer = "";
-    for(int i = my_string.length() - 1; i >= 0; i--)
+    for(auto i = my_string.rbegin(); i != my_string.rend(); i++)
     {
-        answer.push_back(my_string[i]);
+        answer.push_back(*i);
     }
     return answer;
 }
