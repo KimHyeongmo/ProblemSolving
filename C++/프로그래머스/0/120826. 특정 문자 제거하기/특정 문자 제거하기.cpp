@@ -3,15 +3,10 @@
 
 using namespace std;
 
-string solution(string my_string, string letter) {
-    string answer = "";
-    string::iterator i;
-    for(i = my_string.begin(); i != my_string.end(); i++)
-    {
-        if(letter[0] != *i)
-        {
-            answer.push_back(*i);
-        }
-    }
+string solution(string my_string, string letter)
+{
+    string answer="";
+    for(int i=0; i<my_string.length(); i++)
+        if(my_string[i]!=letter[0]) answer+=my_string[i];
     return answer;
 }
