@@ -11,9 +11,7 @@ string solution(vector<string> seoul) {
     {
         if(seoul[i].compare("Kim") == 0)
         {
-            answer.append(to_string(i));
-            answer.append(answer2);
-            return answer;
+            return "김서방은 " + to_string(i) + "에 있다";
         }
     }
 }
